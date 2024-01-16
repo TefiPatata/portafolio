@@ -145,56 +145,11 @@ return [
     'menu' => [
         // Navbar items:
         [
-            'text' => 'Home',
+            'text' => 'Products',
             'icon' => 'ti ti-home',
-            'url' => '/home'
-        ],
-        [
-            'text' => 'Ejemplos',
-            'icon' => 'ti ti-home',
-            'url' => '/ejemplo'
-        ],
-        [
-            'text' => 'Support 1',
-            'url' => '/support',
-            'icon' => 'ti ti-help',
-            'active' => ['support1'],
-            'submenu' => [
-                [
-                    'text' => 'Ticket',
-                    'url' => 'support1',
-                    'icon' => 'ti ti-article',
-                ]
-            ],
+            'url' => '/products'
         ],
 
-        [
-            'text' => 'Support 2',
-            'url' => '#',
-            'icon' => 'ti ti-help',
-            'active' => ['support2'],
-            'submenu' => [
-                [
-                    'text' => 'Ticket',
-                    'url' => 'support2',
-                    'icon' => 'ti ti-article',
-                ]
-            ],
-        ],
-
-        [
-            'text' => 'Support 3',
-            'url' => '#',
-            'icon' => 'ti ti-help',
-            'active' => ['support3'],
-            'submenu' => [
-                [
-                    'text' => 'Ticket',
-                    'url' => 'support3',
-                    'icon' => 'ti ti-article',
-                ]
-            ],
-        ],
 
     ],
 
