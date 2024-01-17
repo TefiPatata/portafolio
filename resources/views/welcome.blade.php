@@ -131,70 +131,18 @@
                     </div>
                     <div class="education">
                         <h4><label>Habilidades</label></h4>
+                        @foreach ($datos as $dato)
                         <ul class="bars">
-                            @foreach ($datos as $dato)
                             <li class="bar">
                                 <div class="info">
                                     <span>{{ $dato->skill }}</span>
                                     <span>{{ $dato->percentage }}%</span>
                                 </div>
-                                <div class="line html">
-
-                                </div>
-                            </li>
-                            @endforeach
-                            <li class="bar">
-                                <div class="info">
-                                    <span>CSS</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="line css">
-
-                                </div>
-                            </li>
-                            <li class="bar">
-                                <div class="info">
-                                    <span>Javascript</span>
-                                    <span>75%</span>
-                                </div>
-                                <div class="line javascript">
-
-                                </div>
-                            </li>
-                            <li class="bar">
-                                <div class="info">
-                                    <span>Python</span>
-                                    <span>55%</span>
-                                </div>
-                                <div class="line python">
-
-                                </div>
-                            </li>
-                            <li class="bar">
-                                <div class="info">
-                                    <span>PHP</span>
-                                    <span>70%</span>
-                                </div>
-                                <div class="line php">
-                                </div>
-                            </li>
-                            <li class="bar">
-                                <div class="info">
-                                    <span>Blender</span>
-                                    <span>60%</span>
-                                </div>
-                                <div class="line blender">
-                                </div>
-                            </li>
-                            <li class="bar">
-                                <div class="info">
-                                    <span>Flutter</span>
-                                    <span>70%</span>
-                                </div>
-                                <div class="line flutter">
+                                <div class="line {{ strtolower($dato->skill) }}">
                                 </div>
                             </li>
                         </ul>
+                        @endforeach
                     </div>
                     <div class="education">
                         <h4><label>Certificados</label></h4>
