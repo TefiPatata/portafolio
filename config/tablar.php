@@ -149,6 +149,11 @@ return [
             'icon' => 'ti ti-home',
             'url' => '/products'
         ],
+        [
+            'text' => 'Skills',
+            'icon' => 'ti ti-crown',
+            'url' => '/skills'
+        ],
 
 
     ],

@@ -132,15 +132,17 @@
                     <div class="education">
                         <h4><label>Habilidades</label></h4>
                         <ul class="bars">
+                            @foreach ($datos as $dato)
                             <li class="bar">
                                 <div class="info">
-                                    <span>HTML</span>
-                                    <span>85%</span>
+                                    <span>{{ $dato->skill }}</span>
+                                    <span>{{ $dato->percentage }}%</span>
                                 </div>
                                 <div class="line html">
 
                                 </div>
                             </li>
+                            @endforeach
                             <li class="bar">
                                 <div class="info">
                                     <span>CSS</span>
