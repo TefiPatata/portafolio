@@ -55,6 +55,10 @@ class Profileinfo extends Model
 
     protected $perPage = 20;
 
+    // app/Models/Skillssection.php
+    protected $table = 'profileinfo';
+
+
     /**
      * Attributes that should be mass-assignable.
      *

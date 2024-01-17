@@ -1,7 +1,7 @@
 @extends('tablar::page')
 
 @section('title')
-    Aboutme
+    About me
 @endsection
 
 @section('content')
@@ -15,13 +15,13 @@
                         List
                     </div>
                     <h2 class="page-title">
-                        {{ __('Aboutme ') }}
+                        {{ __('About Me ') }}
                     </h2>
                 </div>
                 <!-- Page title actions -->
                 <div class="col-12 col-md-auto ms-auto d-print-none">
                     <div class="btn-list">
-                        <a href="{{ route('aboutmes.create') }}" class="btn btn-primary d-none d-sm-inline-block">
+                        <a href="{{ route('aboutme.create') }}" class="btn btn-primary d-none d-sm-inline-block">
                             <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
                                  viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -30,7 +30,7 @@
                                 <line x1="12" y1="5" x2="12" y2="19"/>
                                 <line x1="5" y1="12" x2="19" y2="12"/>
                             </svg>
-                            Create Aboutme
+                            Create About Me
                         </a>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Aboutme</h3>
+                            <h3 class="card-title">About Me</h3>
                         </div>
                         <div class="card-body border-bottom py-3">
                             <div class="d-flex">
@@ -115,15 +115,15 @@
                                                     </button>
                                                     <div class="dropdown-menu dropdown-menu-end">
                                                         <a class="dropdown-item"
-                                                           href="{{ route('aboutmes.show',$aboutme->id) }}">
+                                                           href="{{ route('aboutme.show',$aboutme->id) }}">
                                                             View
                                                         </a>
                                                         <a class="dropdown-item"
-                                                           href="{{ route('aboutmes.edit',$aboutme->id) }}">
+                                                           href="{{ route('aboutme.edit',$aboutme->id) }}">
                                                             Edit
                                                         </a>
                                                         <form
-                                                            action="{{ route('aboutmes.destroy',$aboutme->id) }}"
+                                                            action="{{ route('aboutme.destroy',$aboutme->id) }}"
                                                             method="POST">
                                                             @csrf
                                                             @method('DELETE')

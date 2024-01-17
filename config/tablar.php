@@ -145,14 +145,64 @@ return [
     'menu' => [
         // Navbar items:
         [
-            'text' => 'Products',
-            'icon' => 'ti ti-home',
-            'url' => '/products'
-        ],
-        [
             'text' => 'Skills',
             'icon' => 'ti ti-crown',
             'url' => '/skills'
+        ],
+        [
+            'text' => 'About me',
+            'icon' => 'ti ti-crown',
+            'url' => '/aboutme'
+        ],
+        [
+            'text' => 'Education',
+            'icon' => 'ti ti-crown',
+            'url' => '/education'
+        ],
+        [
+            'text' => 'Certificates',
+            'icon' => 'ti ti-crown',
+            'url' => '/certificates'
+        ],
+        [
+            'text' => 'Messages',
+            'icon' => 'ti ti-crown',
+            'url' => '/messages'
+        ],
+        [
+            'text' => 'Clients',
+            'icon' => 'ti ti-crown',
+            'url' => '/clients'
+        ],
+        [
+            'text' => 'Social networks',
+            'icon' => 'ti ti-crown',
+            'url' => '/socialnetworks'
+        ],
+        [
+            'text' => 'Portfolio',
+            'icon' => 'ti ti-crown',
+            'url' => '/portfolio'
+        ],
+        [
+            'text' => 'Profile info',
+            'icon' => 'ti ti-crown',
+            'url' => '/profileinfo'
+        ],
+        [
+            'text' => 'Services',
+            'icon' => 'ti ti-crown',
+            'url' => '/services'
+        ],
+        [
+            'text' => 'Skills section',
+            'icon' => 'ti ti-crown',
+            'url' => '/skillssection'
+        ],
+        [
+            'text' => 'Work',
+            'icon' => 'ti ti-crown',
+            'url' => '/work'
         ],
 
 

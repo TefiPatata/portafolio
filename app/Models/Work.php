@@ -35,6 +35,8 @@ class Work extends Model
 
     protected $perPage = 20;
 
+    protected $table = 'work';
+
     /**
      * Attributes that should be mass-assignable.
      *

@@ -30,6 +30,8 @@ class Aboutme extends Model
 
     protected $perPage = 20;
 
+    protected $table = 'aboutme';
+
     /**
      * Attributes that should be mass-assignable.
      *

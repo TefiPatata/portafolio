@@ -21,7 +21,7 @@
                 <!-- Page title actions -->
                 <div class="col-12 col-md-auto ms-auto d-print-none">
                     <div class="btn-list">
-                        <a href="{{ route('works.create') }}" class="btn btn-primary d-none d-sm-inline-block">
+                        <a href="{{ route('work.create') }}" class="btn btn-primary d-none d-sm-inline-block">
                             <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24"
                                  viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -119,15 +119,15 @@
                                                     </button>
                                                     <div class="dropdown-menu dropdown-menu-end">
                                                         <a class="dropdown-item"
-                                                           href="{{ route('works.show',$work->id) }}">
+                                                           href="{{ route('work.show',$work->id) }}">
                                                             View
                                                         </a>
                                                         <a class="dropdown-item"
-                                                           href="{{ route('works.edit',$work->id) }}">
+                                                           href="{{ route('work.edit',$work->id) }}">
                                                             Edit
                                                         </a>
                                                         <form
-                                                            action="{{ route('works.destroy',$work->id) }}"
+                                                            action="{{ route('work.destroy',$work->id) }}"
                                                             method="POST">
                                                             @csrf
                                                             @method('DELETE')

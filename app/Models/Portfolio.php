@@ -47,6 +47,7 @@ class Portfolio extends Model
      */
     protected $fillable = ['name_project','type_project','participation','photo1','photo2','description','client_id','skills_id'];
 
+    protected $table = 'portfolio';
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasOne

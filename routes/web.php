@@ -23,13 +23,13 @@ Route::resource('/skills', SkillController::class);
 
 Route::get('/', [SkillController::class, 'obtener']);
 Route::resource('/education', App\Http\Controllers\EducationController::class);
-Route::resource('/certificate', App\Http\Controllers\CertificateController::class);
-Route::resource('/message', App\Http\Controllers\MessageController::class);
-Route::resource('/client', App\Http\Controllers\ClientController::class);
+Route::resource('/certificates', App\Http\Controllers\CertificateController::class);
+Route::resource('/messages', App\Http\Controllers\MessageController::class);
+Route::resource('/clients', App\Http\Controllers\ClientController::class);
 Route::resource('/aboutme', App\Http\Controllers\AboutmeController::class);
-Route::resource('/socialnetwork', App\Http\Controllers\SocialnetworkController::class);
+Route::resource('/socialnetworks', App\Http\Controllers\SocialnetworkController::class);
 Route::resource('/work', App\Http\Controllers\WorkController::class);
 Route::resource('/skillssection', App\Http\Controllers\SkillssectionController::class);
-Route::resource('/service', App\Http\Controllers\ServiceController::class);
+Route::resource('/services', App\Http\Controllers\ServiceController::class);
 Route::resource('/portfolio', App\Http\Controllers\PortfolioController::class);
 Route::resource('/profileinfo', App\Http\Controllers\ProfileinfoController::class);

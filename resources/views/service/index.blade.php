@@ -15,7 +15,7 @@
                         List
                     </div>
                     <h2 class="page-title">
-                        {{ __('Service ') }}
+                        {{ __('Services ') }}
                     </h2>
                 </div>
                 <!-- Page title actions -->
@@ -47,7 +47,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Service</h3>
+                            <h3 class="card-title">Services</h3>
                         </div>
                         <div class="card-body border-bottom py-3">
                             <div class="d-flex">

@@ -35,6 +35,10 @@ class Skillssection extends Model
 
     protected $perPage = 20;
 
+    // app/Models/Skillssection.php
+    protected $table = 'skillssection';
+
+
     /**
      * Attributes that should be mass-assignable.
      *
