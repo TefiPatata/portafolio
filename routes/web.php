@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\CertificateController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\EjemploController;
+use App\Http\Controllers\FrontEndController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SkillController;
 
@@ -21,7 +23,7 @@ Route::resource('/ejemplo', App\Http\Controllers\EjemploController::class);
 Route::resource('/products', ProductController::class);
 Route::resource('/skills', SkillController::class);
 
-Route::get('/', [SkillController::class, 'obtener']);
+Route::get('/', [FrontEndController::class, 'obtener_datos'])->name('obtener_datos');
 Route::resource('/education', App\Http\Controllers\EducationController::class);
 Route::resource('/certificates', App\Http\Controllers\CertificateController::class);
 Route::resource('/messages', App\Http\Controllers\MessageController::class);

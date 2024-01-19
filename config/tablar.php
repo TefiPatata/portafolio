@@ -160,7 +160,7 @@ return [
             'url' => '/education'
         ],
         [
-            'text' => 'Certificates',
+            'text' => 'Courses',
             'icon' => 'ti ti-crown',
             'url' => '/certificates'
         ],

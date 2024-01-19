@@ -1,7 +1,7 @@
 @extends('tablar::page')
 
 @section('title')
-    Certificates
+    Courses
 @endsection
 
 @section('content')
@@ -15,7 +15,7 @@
                         List
                     </div>
                     <h2 class="page-title">
-                        {{ __('Certificates ') }}
+                        {{ __('Courses ') }}
                     </h2>
                 </div>
                 <!-- Page title actions -->
@@ -30,7 +30,7 @@
                                 <line x1="12" y1="5" x2="12" y2="19"/>
                                 <line x1="5" y1="12" x2="19" y2="12"/>
                             </svg>
-                            Create Certificate
+                            Create Course
                         </a>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Certificates</h3>
+                            <h3 class="card-title">Courses</h3>
                         </div>
                         <div class="card-body border-bottom py-3">
                             <div class="d-flex">
@@ -97,7 +97,7 @@
                                 @forelse ($certificates as $certificate)
                                     <tr>
                                         <td><input class="form-check-input m-0 align-middle" type="checkbox"
-                                                   aria-label="Select certificate"></td>
+                                                   aria-label="Select course"></td>
                                         <td>{{ ++$i }}</td>
                                         
 											<td>{{ $certificate->time_frame }}</td>

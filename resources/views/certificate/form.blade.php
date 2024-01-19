@@ -5,7 +5,7 @@
         {{ Form::text('time_frame', $certificate->time_frame, ['class' => 'form-control' .
         ($errors->has('time_frame') ? ' is-invalid' : ''), 'placeholder' => 'Time Frame']) }}
         {!! $errors->first('time_frame', '<div class="invalid-feedback">:message</div>') !!}
-        <small class="form-hint">certificate <b>time_frame</b> instruction.</small>
+        <small class="form-hint">course <b>time_frame</b> instruction.</small>
     </div>
 </div>
 <div class="form-group mb-3">
@@ -14,7 +14,7 @@
         {{ Form::text('name', $certificate->name, ['class' => 'form-control' .
         ($errors->has('name') ? ' is-invalid' : ''), 'placeholder' => 'Name']) }}
         {!! $errors->first('name', '<div class="invalid-feedback">:message</div>') !!}
-        <small class="form-hint">certificate <b>name</b> instruction.</small>
+        <small class="form-hint">course <b>name</b> instruction.</small>
     </div>
 </div>
 <div class="form-group mb-3">
@@ -23,7 +23,7 @@
         {{ Form::text('description', $certificate->description, ['class' => 'form-control' .
         ($errors->has('description') ? ' is-invalid' : ''), 'placeholder' => 'Description']) }}
         {!! $errors->first('description', '<div class="invalid-feedback">:message</div>') !!}
-        <small class="form-hint">certificate <b>description</b> instruction.</small>
+        <small class="form-hint">course <b>description</b> instruction.</small>
     </div>
 </div>
 

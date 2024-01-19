@@ -24,6 +24,7 @@ class CertificateController extends Controller
             ->with('i', (request()->input('page', 1) - 1) * $certificates->perPage());
     }
 
+
     /**
      * Show the form for creating a new resource.
      *

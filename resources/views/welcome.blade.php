@@ -131,14 +131,14 @@
                     </div>
                     <div class="education">
                         <h4><label>Habilidades</label></h4>
-                        @foreach ($datos as $dato)
+                        @foreach ($habilidades as $skill)
                         <ul class="bars">
                             <li class="bar">
                                 <div class="info">
-                                    <span>{{ $dato->skill }}</span>
-                                    <span>{{ $dato->percentage }}%</span>
+                                    <span>{{ $skill->skill }}</span>
+                                    <span>{{ $skill->percentage }}%</span>
                                 </div>
-                                <div class="line {{ strtolower($dato->skill) }}">
+                                <div class="line {{ strtolower($skill->skill) }}">
                                 </div>
                             </li>
                         </ul>
@@ -146,16 +146,14 @@
                     </div>
                     <div class="education">
                         <h4><label>Certificados</label></h4>
+                        @foreach ($certificados as $certificado)                            
                         <ul class="edu-list">
                             <li class="item">
-                                <span class="year">2021</span>
-                                <p>CCNAv7: Introduction to Networks - CISCO: Networking Academy</p>
-                            </li>
-                            <li class="item">
-                                <span class="year">2022</span>
-                                <p>CCNAv7: Switching, Routing, and Wireless Essentials - CISCO: Networking Academy</p>
+                                <span class="year">{{ $certificado->time_frame }}</span>
+                                <p>{{ $certificado->name }} - {{ $certificado->description }}</p>
                             </li>
                         </ul>
+                        @endforeach
                     </div>
                 </div>
                 <div class="skills-description">

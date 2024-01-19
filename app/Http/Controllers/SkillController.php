@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Certificate;
 use App\Models\Skill;
 use Illuminate\Http\Request;
 
@@ -24,11 +25,6 @@ class SkillController extends Controller
             ->with('i', (request()->input('page', 1) - 1) * $skills->perPage());
             
 
-    }
-
-    public function obtener(){
-        $datos = Skill::all();
-        return view('welcome', ['datos'=>$datos]);
     }
 
     /**
