@@ -18,10 +18,10 @@ class EducationController extends Controller
      */
     public function index()
     {
-        $education = Education::paginate(10);
+        $educations = Education::paginate(10);
 
-        return view('education.index', compact('education'))
-            ->with('i', (request()->input('page', 1) - 1) * $education->perPage());
+        return view('education.index', compact('educations'))
+            ->with('i', (request()->input('page', 1) - 1) * $educations->perPage());
     }
 
     /**

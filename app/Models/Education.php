@@ -35,6 +35,4 @@ class Education extends Model
      */
     protected $fillable = ['time_frame','degree','institute'];
 
-
-
 }

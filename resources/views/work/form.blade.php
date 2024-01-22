@@ -20,7 +20,7 @@
 <div class="form-group mb-3">
     <label class="form-label">   {{ Form::label('time-contract') }}</label>
     <div>
-        {{ Form::text('time-contract', $work->time-contract, ['class' => 'form-control' .
+        {{ Form::text('time-contract', $work->time_contract, ['class' => 'form-control' .
         ($errors->has('time-contract') ? ' is-invalid' : ''), 'placeholder' => 'Time-Contract']) }}
         {!! $errors->first('time-contract', '<div class="invalid-feedback">:message</div>') !!}
         <small class="form-hint">work <b>time-contract</b> instruction.</small>

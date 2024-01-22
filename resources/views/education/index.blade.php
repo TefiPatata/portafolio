@@ -94,7 +94,7 @@
                                 </thead>
 
                                 <tbody>
-                                @forelse ($education as $education)
+                                @forelse ($educations as $education)
                                     <tr>
                                         <td><input class="form-check-input m-0 align-middle" type="checkbox"
                                                    aria-label="Select education"></td>
@@ -145,7 +145,7 @@
                             </table>
                         </div>
                        <div class="card-footer d-flex align-items-center">
-                            {!! $education->links('tablar::pagination') !!}
+                            {!! $educations->links('tablar::pagination') !!}
                         </div>
                     </div>
                 </div>
